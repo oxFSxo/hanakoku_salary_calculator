@@ -2,25 +2,25 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>‰Ô‹‹—¿ŒvZ‹@</title>
+    <title>èŠ±åˆ»çµ¦æ–™è¨ˆç®—æ©Ÿ</title>
   </head>
   <body>
-    —İŒvŠˆ“®—ÊF<input type="number" id="all"><br>
-    ŠúŠÔŠˆ“®—ÊF<input type="number" id="period"><br>
-    Ÿ‚Ì‹‹—¿@F<input tyoe="number" id="next" readonly="readonly"><br>
-    <input type="button" id="button" value="ŒvZ"><br>
+    ç´¯è¨ˆæ´»å‹•é‡ï¼š<input type="number" id="all"><br>
+    æœŸé–“æ´»å‹•é‡ï¼š<input type="number" id="period"><br>
+    æ¬¡ã®çµ¦æ–™ã€€ï¼š<input tyoe="number" id="next" readonly="readonly"><br>
+    <input type="button" id="button" value="è¨ˆç®—"><br>
     <br>
-    ‹‹—¿ãŒÀ‚ªŸ‚Ì‹‹—¿‚æ‚è‰º‚Ìê‡‚Í‹‹—¿ãŒÀ‚Å<br>
-    EŒvZ®<br>
-    (—İŒvŠˆ“®—Ê/10000)*1000+ŠúŠÔŠˆ“®—Ê*80<br>
-    ‚½‚¾‚µ‰ºŒÀ’l‚Í400,000ƒVƒ‹ƒo[‚Æ‚·‚é<br>
+    çµ¦æ–™ä¸Šé™ãŒæ¬¡ã®çµ¦æ–™ã‚ˆã‚Šä¸‹ã®å ´åˆã¯çµ¦æ–™ä¸Šé™ã§<br>
+    ãƒ»è¨ˆç®—å¼<br>
+    (ç´¯è¨ˆæ´»å‹•é‡/10000)*1000+æœŸé–“æ´»å‹•é‡*80<br>
+    ãŸã ã—ä¸‹é™å€¤ã¯400,000ã‚·ãƒ«ãƒãƒ¼ã¨ã™ã‚‹<br>
     <script>
     	btn = document.getElementById("button");
 			btn.onclick = function() {
 	    var all = document.getElementById("all");
 	    var period = document.getElementById("period");
 	    var next = document.getElementById("next");
-	    var value1 = Math.ceil(all.value / 10000) * 1000 + period.value * 100;
+	    var value1 = Math.ceil(all.value / 10000) * 1000 + period.value * 80;
 	    if (value1 < 400000) {
 	        value1 = 400000;
 	    }

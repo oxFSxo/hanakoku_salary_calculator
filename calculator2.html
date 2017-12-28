@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="calculator2.js" charset="UTF-8"></script>
+    <title>花刻給料計算機(2018/1/1～)</title>
+  </head>
+  <body>
+    累計活動量：<input type="number" id="all"><br>
+    期間活動量：<input type="number" id="period"><br>
+    <input type="button" id="button" value="計算" onClick="calculate()"><br>
+    次の給料　：<input tyoe="number" id="next" readonly="readonly"><br>
+    <br>
+    給料上限が次の給料より下の場合は給料上限で<br>
+    ・計算式<br>
+    (累計活動量/10000)*2000+期間活動量*80<br>
+    ただし下限値は400,000シルバーとする<br>
+    <br>
+    <br>
+    <br>
+    <a href="index.html">home</a>
+  </body>
+</html>

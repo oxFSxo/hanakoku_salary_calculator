@@ -1,4 +1,4 @@
-function calculate() {
+﻿function calculate() {
   var all = document.getElementById("all");
   var period = document.getElementById("period");
   if (all.value == "" || period.value == "") {
@@ -6,7 +6,7 @@ function calculate() {
     return;
   }
   var next = document.getElementById("next");
-  var value1 = Math.ceil(all.value / 10000) * 1000 + period.value * 80;
+  var value1 = Math.ceil(all.value / 10000) * 2000 + period.value * 80;
   if (value1 < 400000) {
     value1 = 400000;
   }

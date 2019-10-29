@@ -12,6 +12,10 @@ function calculate() {
     period.vlaue = 0; // 期間内活動量が未入力なら0を入れる
   }
 
+  if (10000 < period.value) {
+    period.value = 10000; // 期間活動量は1万が上限なので補正
+  }
+
   // 短期給料計算
   var next_short = document.getElementById("nextShort");
   var value1 = Math.ceil(all.value / 10000) * 2000 + period.value * 200;

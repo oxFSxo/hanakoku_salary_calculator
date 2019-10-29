@@ -9,14 +9,17 @@
     <h2>花刻給料計算機</h2>
     累計活動量：<input type="number" id="all" onkeypress="onKeyPress(event);"><br>
     期間活動量：<input type="number" id="period" onkeypress="onKeyPress(event);"><br>
-    <input type="button" id="button" value="計算" onClick="calculate()"><br>
+    <input type="button" id="calc" value="計算" onClick="calculate()"><br>
     <br>
     <br>
     給料(短期)：<input tyoe="number" id="nextShort" readonly="readonly"><br>
     給料(長期)：<input tyoe="number" id="nextLong" readonly="readonly"><br>
+    <input type="button" id="copy" value="コピー" onClick="copyToClipBoard()" disabled><br>
     <br>
     赤文字になっている方が給料高いのでそっちで契約してください。<br>
-    給料上限が次の給料より下の場合は給料上限で<br>
+    給料上限が次の給料より下の場合は給料上限に設定してください。<br>
+    コピーボタンを押すとクリップボードに高い方の給料がコピーされるので<br>
+    給料のとこにペーストしてください。<br>
     <br>
     ・計算式(短期)<br>
     (累計活動量/10000)*2000+期間活動量*200<br>

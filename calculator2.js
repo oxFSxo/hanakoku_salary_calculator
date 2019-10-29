@@ -54,6 +54,10 @@ function calculate() {
     next_short.style.color = "#333333";
     next_long.style.color = "#FF0000";
   }
+
+  // コピーボタンを有効家
+  var copy = document.getElementById("copy");
+  copy.disabled = false;
 };
 
 // キー押下時イベント
@@ -65,4 +69,22 @@ function onKeyPress(e) {
   calculate();
 
   return true;
+};
+
+// クリップボードにコピー
+function copyToClipBoard() {
+  if(navigator.clipboard){
+    var next_short = document.getElementById("nextShort");
+    var next_long = document.getElementById("nextLong");
+
+    var copy_str = "";
+    if (next_long.value < next_short.value) {
+      copy_str = next_short.value;
+    }
+    else {
+      copy_str = next_long.value;
+    }
+
+    navigator.clipboard.writeText(copy_str);
+  }
 };

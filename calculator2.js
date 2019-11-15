@@ -18,7 +18,7 @@ function calculate() {
 
   // 短期給料計算
   var next_short = document.getElementById("nextShort");
-  var value1 = Math.ceil(all.value / 10000) * 2000 + period.value * 200;
+  var value1 = Math.ceil(all.value / 10000) * 2000 + period.value * 400;
 
   // 下限判定
   if (value1 < 400000) {
